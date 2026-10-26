@@ -1,0 +1,27 @@
+{
+  "mcpServers": {
+    "bch-cashtoken-launchpad-ai": {
+      "command": "cargo",
+      "args": [
+        "run",
+        "--release",
+        "--quiet"
+      ],
+      "env": {
+        "RUST_LOG": "info",
+        "HACKATHON_TRACK": "Bitcoin Cash",
+        "PROJECT_TICKER": "BCHPAD"
+      },
+      "tools": [
+        {
+          "name": "verify_bchpad_invariants",
+          "description": "Verifies deterministic invariants for BCH CashToken Launchpad AI on Bitcoin Cash."
+        },
+        {
+          "name": "execute_bchpad_action",
+          "description": "Executes authenticated Launchpad state transition."
+        }
+      ]
+    }
+  }
+}

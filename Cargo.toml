@@ -1,0 +1,9 @@
+[package]
+name = "bch-cashtoken-launchpad-ai"
+version = "1.0.0"
+edition = "2021"
+authors = ["Martin Luther <martinlutherupa1@gmail.com>"]
+description = "Verifiable token launchpad and vesting escrow vault"
+license = "MIT"
+
+[dependencies]
